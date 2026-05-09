@@ -16,6 +16,17 @@ def analyze_errors(filepath="app.log"):
     return count
 
 
+def analyze_backup(filepath="backup.log"):
+    counts = {"success": 0, "fail": 0}
+    with open(filepath) as f:
+        for line in f:
+            if "SUCCESS" in line:
+                counts["success"] += 1
+            elif "FAIL" in line:
+                counts["fail"] += 1
+    return counts
+
+
 def analyze_log(filepath="app.log"):
     sayilar = {"WARNING": 0, "ERROR": 0, "CRITICAL": 0}
     

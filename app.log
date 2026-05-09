@@ -1,0 +1,10 @@
+INFO: Uygulama başladı
+WARNING: Disk dolmak üzere
+INFO: Backup başladı
+WARNING: Bağlantı yavaş
+ERROR: Timeout oluştu
+WARNING: Retry deneniyor
+INFO: Tamamlandı
+WARNING: Hafıza kullanımı yüksek
+WARNING: CPU spike tespit edildi
+WARNING: Yavaş sorgu

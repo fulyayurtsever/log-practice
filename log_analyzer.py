@@ -7,6 +7,15 @@ def analyze_warnings(filepath="app.log"):
     return count <= 5
 
 
+def analyze_errors(filepath="app.log"):
+    count = 0
+    with open(filepath) as f:
+        for line in f:
+            if "ERROR" in line:
+                count += 1
+    return count
+
+
 def analyze_log(filepath="app.log"):
     sayilar = {"WARNING": 0, "ERROR": 0, "CRITICAL": 0}
     
